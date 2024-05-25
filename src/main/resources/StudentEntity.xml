@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.ra.web.entity.StudentEntity">
+        <table name="student" schema="exam_javacore_webapp" catalog=""/>
+        <attributes>
+            <id name="studentId">
+                <column name="student_id" precision="-1"/>
+            </id>
+            <basic name="address">
+                <column name="address" nullable="false"/>
+            </basic>
+            <basic name="birthday">
+                <column name="birthday" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="imageUrl">
+                <column name="image_url" nullable="false"/>
+            </basic>
+            <basic name="phoneNumber">
+                <column name="phone_number" nullable="false" length="15"/>
+            </basic>
+            <basic name="sex">
+                <column name="sex" nullable="false" precision="1"/>
+            </basic>
+            <basic name="studentName">
+                <column name="student_name" nullable="false" length="100"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

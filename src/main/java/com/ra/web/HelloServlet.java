@@ -1,4 +1,4 @@
-package com.ra.web.exam_javacore_webapp;
+package com.ra.web;
 
 import java.io.*;
 import javax.servlet.http.*;
